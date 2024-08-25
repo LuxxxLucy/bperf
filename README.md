@@ -5,7 +5,7 @@ Profile Bash scripts and output a perf.script file.  Usage:
 ./bperf.tcl your_script.sh [arg1 arg2 ...]
 ```
 
-append `--no-clean` if you do not want to clean up the temp files 
+append `--no-clean` if you do not want to clean up the temp files
 ```
 ./bperf.tcl --no-clean your_script.sh ...
 ```
@@ -13,6 +13,10 @@ append `--no-clean` if you do not want to clean up the temp files
 Requirements:
 - Bash (well, you want to run bash so you must have bash)
 - Tcl (believe it or not, it's probably installed on your system if you are using UNIX)
+
+Run the test_sh.sh in the `example` folder we can get a perf.scrpt that can be used in any of the profiler application, such as Firefox Profiler
+
+![drag into firefox profiler](./example/firefox-profiler-show.png)
 
 Limitations:
 - macOS users: The default `date` on macOS doesn't support printing-out nanoseconds. Install `gdate` for full functionality.
